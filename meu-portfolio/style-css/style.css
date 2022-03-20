@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body {
+  box-sizing: border-box;
+}
+
 h2 {
   font-family: "MuseoModerno", cursive;
 }
@@ -196,7 +200,6 @@ main .center .projects .itens .clone-spotify {
 main .center .projects .itens .clone-spotify img {
   width: 550px;
   border-radius: 15px;
-  margin-right: 40px;
   -webkit-box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
   box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
@@ -230,6 +233,9 @@ main .center .projects .itens .clone-spotify .overlay button {
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: medium;
+}
+main .center .projects .itens .informations {
+  max-width: 350px;
 }
 main .center .projects .clone-spotify:hover .overlay {
   transform: scale(1);
@@ -345,7 +351,6 @@ main .center .projects .clone-spotify:hover .overlay {
   }
   main .center .projects {
     height: 100vh;
-    min-width: 80vw;
   }
 }
 @media (max-width: 490px) {
@@ -372,6 +377,10 @@ main .center .projects .clone-spotify:hover .overlay {
     height: 44px;
     line-height: 22px;
   }
+  main .center .projects {
+    width: 90%;
+    height: 800px;
+  }
   main .center .projects .itens .clone-spotify {
     max-width: 100%;
   }
@@ -397,6 +406,9 @@ main .center .projects .clone-spotify:hover .overlay {
   }
   main .center .curriculum .text-informations {
     justify-content: space-between;
+  }
+  main .center .projects .itens .clone-spotify .overlay {
+    flex-direction: column;
   }
 }
 
