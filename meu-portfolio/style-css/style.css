@@ -384,6 +384,9 @@ main .center .projects .clone-spotify:hover .overlay {
   main .center .projects .itens .clone-spotify {
     max-width: 100%;
   }
+  main .center .projects .itens .clone-spotify .overlay {
+    flex-direction: column;
+  }
   main .center .projects .itens .clone-spotify img {
     max-width: 100%;
   }
@@ -406,9 +409,6 @@ main .center .projects .clone-spotify:hover .overlay {
   }
   main .center .curriculum .text-informations {
     justify-content: space-between;
-  }
-  main .center .projects .itens .clone-spotify .overlay {
-    flex-direction: column;
   }
 }
 

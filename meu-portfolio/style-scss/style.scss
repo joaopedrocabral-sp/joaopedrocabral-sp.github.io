@@ -442,6 +442,9 @@ main{
                     .clone-spotify{
                         max-width: 100%;
 
+                        .overlay{
+                            flex-direction: column;
+                        }
                         img{
                             max-width: 100%;
                         }
@@ -477,15 +480,6 @@ main{
                 }
                 .text-informations{
                     justify-content: space-between;
-                }
-            }
-            .projects{
-                .itens{
-                    .clone-spotify{
-                        .overlay{
-                            flex-direction: column;
-                        }
-                    }
                 }
             }
         }
