@@ -399,10 +399,6 @@ main .center .projects .clone-spotify:hover .overlay {
     height: 44px;
     line-height: 22px;
   }
-  main .center .projects {
-    width: 90%;
-    height: 900px;
-  }
   main .center .projects .itens .clone-spotify {
     max-width: 100%;
   }
