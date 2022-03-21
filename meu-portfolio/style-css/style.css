@@ -82,7 +82,7 @@ main {
 main .center {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
   width: 85%;
   margin: 30px 0;
@@ -176,12 +176,10 @@ main .center .curriculum .text-informations .hobbies {
 main .center .projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width: 65%;
   height: 90%;
   text-align: center;
-  align-self: flex-start;
 }
 main .center .projects h2 {
   font-size: xx-large;
@@ -190,16 +188,15 @@ main .center .projects h2 {
 main .center .projects .itens {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
 }
 main .center .projects .itens .clone-spotify {
-  width: 550px;
   position: relative;
 }
 main .center .projects .itens .clone-spotify img {
-  width: 550px;
+  width: 85%;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
@@ -238,12 +235,24 @@ main .center .projects .itens .clone-spotify .overlay button {
   font-size: medium;
 }
 main .center .projects .itens .informations {
-  max-width: 350px;
+  max-width: 90%;
 }
 main .center .projects .clone-spotify:hover .overlay {
   transform: scale(1);
 }
 
+@media (max-width: 1750px) {
+  header {
+    height: 70px;
+  }
+  header nav {
+    height: 70px;
+  }
+
+  main .center {
+    margin-top: 18px;
+  }
+}
 @media (max-width: 1650px) {
   header nav {
     width: 90%;
@@ -275,9 +284,6 @@ main .center .projects .clone-spotify:hover .overlay {
     height: 44px;
     line-height: 22px;
   }
-  main .center .projects {
-    min-height: 850px;
-  }
   main .center .projects .itens {
     flex-direction: column;
     gap: 5px;
@@ -289,9 +295,7 @@ main .center .projects .clone-spotify:hover .overlay {
 }
 @media (max-width: 1110px) {
   main .center .projects {
-    height: 85vh;
-    align-self: center;
-    justify-content: space-around;
+    align-self: flex-start;
   }
   main .center .projects .itens .clone-spotify {
     width: 450px;
@@ -306,7 +310,7 @@ main .center .projects .clone-spotify:hover .overlay {
     flex-direction: column;
     position: absolute;
     width: 100%;
-    top: 80px;
+    top: 70px;
     right: 0px;
     height: 200px;
     z-index: 1000;
@@ -341,10 +345,12 @@ main .center .projects .clone-spotify:hover .overlay {
   }
   main .center {
     flex-direction: column;
+    align-items: center;
   }
   main .center .curriculum {
     min-height: 80vh;
     min-width: 400px;
+    margin-bottom: 10px;
   }
   main .center .curriculum .apresentation img {
     height: 150px;
@@ -364,8 +370,8 @@ main .center .projects .clone-spotify:hover .overlay {
     height: 30px;
   }
   main .center .projects {
-    height: 1000px;
     width: 90%;
+    align-self: center;
   }
 }
 @media (max-width: 490px) {

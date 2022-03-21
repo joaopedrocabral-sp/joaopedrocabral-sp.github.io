@@ -80,7 +80,7 @@ main{
     .center{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         gap: 30px;
         width: 85%;
         margin: 30px 0;
@@ -183,12 +183,10 @@ main{
         .projects{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
             width: 65%;
             height: 90%;
             text-align: center;
-            align-self: flex-start;
 
             h2{
                 font-size: xx-large;
@@ -197,17 +195,16 @@ main{
             .itens{
                 width: 100%;
                 display: flex;
-                flex-direction: row;
-                gap: 20px;
+                flex-direction: column;
+                gap: 10px;
                 align-items: center;
 
 
                 .clone-spotify{
-                    width: 550px;
                     position: relative;
     
                     img{
-                        width: 550px;
+                        width: 85%;
                         border-radius: 15px;
                         -webkit-box-shadow: 0px 0px 33px -9px rgba(0,0,0,0.63);
                         -moz-box-shadow: 0px 0px 33px -9px rgba(0,0,0,0.63);
@@ -250,13 +247,26 @@ main{
                       }
                 }
                 .informations{
-                    max-width: 350px;
+                    max-width: 90%;
                 }
                 
             }
             .clone-spotify:hover .overlay {
                 transform: scale(1);
               }
+        }
+    }
+}
+@media (max-width: 1750px){
+    header{
+        height: 70px;
+        nav{
+            height: 70px;
+        }
+    }
+    main{
+        .center{
+            margin-top: 18px;
         }
     }
 }
@@ -270,6 +280,7 @@ main{
         .center{
             width: 90%;
         }
+        
     }
 }
 @media (max-width: 1320px){
@@ -300,7 +311,8 @@ main{
                 }
             }
             .projects{
-                min-height: 850px;
+                    
+                
                 .itens{
                     flex-direction: column;
                     gap: 5px;
@@ -319,9 +331,7 @@ main{
     main{
         .center{
             .projects{
-                height: 85vh;
-                align-self: center;
-                justify-content: space-around;
+                align-self: flex-start;
 
                 .itens{
                  
@@ -347,7 +357,7 @@ main{
                 flex-direction: column;
                 position: absolute;
                 width: 100%;
-                top: 80px;
+                top: 70px;
                 right: 0px;
                 height: 200px;
                 z-index: 1000;
@@ -386,10 +396,12 @@ main{
         height: fit-content;
         .center{
             flex-direction: column;
+            align-items: center;
 
             .curriculum{
                 min-height: 80vh;
                 min-width: 400px;
+                margin-bottom: 10px;
 
                 .apresentation{
                     img{
@@ -414,9 +426,8 @@ main{
                 }
             }
             .projects{
-                height: 1000px;
                 width: 90%;
-
+                align-self: center;
             }
         }
     }
