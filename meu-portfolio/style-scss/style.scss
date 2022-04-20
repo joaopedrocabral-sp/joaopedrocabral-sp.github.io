@@ -6,6 +6,10 @@
 body{
     box-sizing: border-box;
 }
+body .active{
+    background-color: $third-color;
+    color: #FFF;
+}
 h2{
     font-family: 'MuseoModerno', cursive;
 }
@@ -27,7 +31,9 @@ header{
     justify-content: center;
     height: 80px;
     width: 100%;
+    position: fixed;
     background: $degrade;
+    z-index: 1000;
 
     nav{
         height: 80px;
@@ -35,6 +41,7 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: fixed;
         
         
         .btn-mobile{
@@ -74,7 +81,7 @@ main{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 80px);
+    // height: calc(100vh - 80px);
     box-sizing: border-box;
     
     .center{
@@ -94,6 +101,8 @@ main{
             max-height: 1000px;
             min-width: 400px;
             display: flex;
+            position: sticky;
+            top: 15%;
             flex-direction: column;
             align-items: center;
             -webkit-box-shadow: 0px 0px 33px -9px rgba(0,0,0,0.63);
@@ -187,21 +196,24 @@ main{
             width: 65%;
             height: 90%;
             text-align: center;
+            margin-top: 70px;
 
             h2{
                 font-size: xx-large;
                 margin-bottom: 10px;
             }
             .itens{
-                width: 100%;
-                display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 30px;
                 align-items: center;
+                display: flex;
 
-
-                .clone-spotify{
+                .item{
                     position: relative;
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    align-items: center;
     
                     img{
                         width: 85%;
@@ -210,23 +222,23 @@ main{
                         -moz-box-shadow: 0px 0px 33px -9px rgba(0,0,0,0.63);
                         box-shadow: 0px 0px 33px -9px rgba(0,0,0,0.63);
                     }
-    
+                    
+                    
                     .overlay {
                         border-radius: 15px;
                         position: absolute;
                         display: flex;
+                        flex-wrap: wrap;
                         justify-content: center;
                         align-items: center;
                         gap: 10px;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
                         background: rgba(255, 255, 255, 0.1);
                         backdrop-filter: blur(2px);
                         -webkit-backdrop-filter: blur(2px);
                         overflow: hidden;
                         width: 100%;
                         height: 100%;
+                        top: 0;
                         transform: scale(0);
                         transition: .3s ease;
     
@@ -244,14 +256,14 @@ main{
                             font-size: medium;
     
                         }
-                      }
+                    }
                 }
                 .informations{
                     max-width: 90%;
                 }
                 
             }
-            .clone-spotify:hover .overlay {
+            .item:hover .overlay {
                 transform: scale(1);
               }
         }
@@ -315,7 +327,7 @@ main{
                 
                 .itens{
                     flex-direction: column;
-                    gap: 5px;
+                    gap: 30px;
                     margin-bottom: 15px;
 
                     .informations{
@@ -336,7 +348,7 @@ main{
                 .itens{
                  
 
-                    .clone-spotify{
+                    .item{
                         width: 450px;
 
                         img{
@@ -402,6 +414,8 @@ main{
                 min-height: 80vh;
                 min-width: 400px;
                 margin-bottom: 10px;
+                position: relative;
+                margin-top: 80px;
 
                 .apresentation{
                     img{
@@ -470,8 +484,9 @@ main{
             }
             .projects{
                 .itens{
-                    .clone-spotify{
+                    .item{
                         max-width: 100%;
+                        width: auto;
 
                         .overlay{
                             flex-direction: column;

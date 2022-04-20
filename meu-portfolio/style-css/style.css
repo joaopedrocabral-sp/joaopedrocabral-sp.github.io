@@ -6,6 +6,11 @@ body {
   box-sizing: border-box;
 }
 
+body .active {
+  background-color: #020024;
+  color: #FFF;
+}
+
 h2 {
   font-family: "MuseoModerno", cursive;
 }
@@ -31,7 +36,9 @@ header {
   justify-content: center;
   height: 80px;
   width: 100%;
+  position: fixed;
   background: #020024 linear-gradient(90deg, #020024 0%, #090979 35%, #5333ed 100%);
+  z-index: 1000;
 }
 header nav {
   height: 80px;
@@ -39,6 +46,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 header nav .btn-mobile {
   display: none;
@@ -76,7 +84,6 @@ main {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: calc(100vh - 80px);
   box-sizing: border-box;
 }
 main .center {
@@ -96,6 +103,8 @@ main .center .curriculum {
   max-height: 1000px;
   min-width: 400px;
   display: flex;
+  position: sticky;
+  top: 15%;
   flex-direction: column;
   align-items: center;
   -webkit-box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
@@ -180,48 +189,51 @@ main .center .projects {
   width: 65%;
   height: 90%;
   text-align: center;
+  margin-top: 70px;
 }
 main .center .projects h2 {
   font-size: xx-large;
   margin-bottom: 10px;
 }
 main .center .projects .itens {
-  width: 100%;
-  display: flex;
   flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  display: flex;
+}
+main .center .projects .itens .item {
+  position: relative;
+  display: flex;
   gap: 10px;
+  flex-direction: column;
   align-items: center;
 }
-main .center .projects .itens .clone-spotify {
-  position: relative;
-}
-main .center .projects .itens .clone-spotify img {
+main .center .projects .itens .item img {
   width: 85%;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
   box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
 }
-main .center .projects .itens .clone-spotify .overlay {
+main .center .projects .itens .item .overlay {
   border-radius: 15px;
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   overflow: hidden;
   width: 100%;
   height: 100%;
+  top: 0;
   transform: scale(0);
   transition: 0.3s ease;
 }
-main .center .projects .itens .clone-spotify .overlay button {
+main .center .projects .itens .item .overlay button {
   width: 150px;
   height: 50px;
   border-radius: 15px;
@@ -237,7 +249,7 @@ main .center .projects .itens .clone-spotify .overlay button {
 main .center .projects .itens .informations {
   max-width: 90%;
 }
-main .center .projects .clone-spotify:hover .overlay {
+main .center .projects .item:hover .overlay {
   transform: scale(1);
 }
 
@@ -286,7 +298,7 @@ main .center .projects .clone-spotify:hover .overlay {
   }
   main .center .projects .itens {
     flex-direction: column;
-    gap: 5px;
+    gap: 30px;
     margin-bottom: 15px;
   }
   main .center .projects .itens .informations {
@@ -297,10 +309,10 @@ main .center .projects .clone-spotify:hover .overlay {
   main .center .projects {
     align-self: flex-start;
   }
-  main .center .projects .itens .clone-spotify {
+  main .center .projects .itens .item {
     width: 450px;
   }
-  main .center .projects .itens .clone-spotify img {
+  main .center .projects .itens .item img {
     width: 450px;
   }
 }
@@ -351,6 +363,8 @@ main .center .projects .clone-spotify:hover .overlay {
     min-height: 80vh;
     min-width: 400px;
     margin-bottom: 10px;
+    position: relative;
+    margin-top: 80px;
   }
   main .center .curriculum .apresentation img {
     height: 150px;
@@ -399,13 +413,14 @@ main .center .projects .clone-spotify:hover .overlay {
     height: 44px;
     line-height: 22px;
   }
-  main .center .projects .itens .clone-spotify {
+  main .center .projects .itens .item {
     max-width: 100%;
+    width: auto;
   }
-  main .center .projects .itens .clone-spotify .overlay {
+  main .center .projects .itens .item .overlay {
     flex-direction: column;
   }
-  main .center .projects .itens .clone-spotify img {
+  main .center .projects .itens .item img {
     max-width: 100%;
   }
 }
