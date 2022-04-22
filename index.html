@@ -14,7 +14,7 @@
 
     <title>Meu portfólio</title>
 </head>
-<body onload="age()" id="body">
+<body onload="age()" id="dark-body">
     <header>
         <nav id="nav">
 
@@ -34,9 +34,9 @@
 
         </nav>
     </header>
-    <main>
+    <main id="dark-main">
         <section class="center">
-            <section class="curriculum">
+            <section class="curriculum" id="dark-curriculum">
 
                 <div class="apresentation"> 
                     <img src="./meu-portfolio/images/foto-joao.jpg" alt="Fotografia do João, dono do site e do portfólio.">
@@ -77,6 +77,7 @@
             <section class="projects">
                 <h2>Meus Principais Projetos</h2>
                 <div class="itens">
+
                     <div class="item">
                         <img src="./meu-portfolio/images/clone-spotify.png"
                             alt="Imagem de um site feito por mim, onde me inspirei no site do Spotify.">
@@ -95,7 +96,7 @@
                 
                     <div class="item">
                         <img src="./meu-portfolio/images/controle-despesas-site.png"
-                            alt="Imagem de um site feito por mim, onde me inspirei no site do Spotify.">
+                            alt="Imagem do site feito para controle de despesas, nele tem os campos para adicionar o valor e o nome da operação, e uma lista suspensa para escolher se é uma entrada ou saída.">
                         <div class="overlay">
                             <a href="https://github.com/joaopedrocabral-sp/joaopedrocabral-sp.github.io/tree/main/controle-despesa" target="_blank"><button>Ver Código</button></a>
                             <a href="./controle-de-despesas.html" target="_blank"><button>Ver Página</button></a>
@@ -106,11 +107,26 @@
                         <p>Criei esse projeto para estudar e reforçar conteúdos aprendidos de javascript. Usei o LocalStorage para armazenar os
                             dados que forem inseridos pela pessoa no site.</p>
                     </div>
+
+                    <div class="item">
+                        <img src="./meu-portfolio/images/controle-despesas-site.png"
+                            alt="Imagem de um site feito por mim, onde me inspirei no site do Spotify.">
+                        <div class="overlay">
+                            <a href="https://github.com/joaopedrocabral-sp/joaopedrocabral-sp.github.io/tree/main/consultaCEP" target="_blank"><button>Ver Código</button></a>
+                            <a href="./consultaCEP.html" target="_blank"><button>Ver Página</button></a>
+                        </div>
+                    </div>
+                    <div class="project-information">
+                        <h3>Busca CEP</h3>
+                        <p>Criei esse projeto para reforçar o aprendizado de consumo de API's.</p>
+                    </div>
+
                 </div>
             </section>
         </section>
     </main>
     <script src="./meu-portfolio/js/navbarMobile.js"></script>
     <script src="./meu-portfolio/js/age.js"></script>
+    <script src="./meu-portfolio/js/darkmode.js"></script>
 </body>
 </html>

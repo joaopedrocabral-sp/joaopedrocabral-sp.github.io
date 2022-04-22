@@ -6,9 +6,14 @@ body {
   box-sizing: border-box;
 }
 
-body .active {
+.dark {
   background-color: #020024;
   color: #FFF;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
 }
 
 h2 {
@@ -28,6 +33,11 @@ p {
 ul {
   font-family: "Jost", sans-serif;
   font-weight: 400;
+}
+
+a:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
 }
 
 header {
@@ -61,6 +71,10 @@ header nav ul {
   list-style: none;
   display: flex;
   gap: 30px;
+}
+header nav ul li:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
 }
 header nav a {
   text-decoration: none;
@@ -207,9 +221,10 @@ main .center .projects .itens .item {
   gap: 10px;
   flex-direction: column;
   align-items: center;
+  width: 85%;
 }
 main .center .projects .itens .item img {
-  width: 85%;
+  width: 100%;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 0px 0px 33px -9px rgba(0, 0, 0, 0.63);
@@ -251,6 +266,13 @@ main .center .projects .itens .informations {
 }
 main .center .projects .item:hover .overlay {
   transform: scale(1);
+}
+
+main .center .dark-curriculum {
+  background-color: #01000c;
+  -webkit-box-shadow: 0px 0px 33px -9px rgba(136, 136, 136, 0.63);
+  -moz-box-shadow: 0px 0px 33px -9px rgba(136, 136, 136, 0.63);
+  box-shadow: 0px 0px 33px -9px rgba(136, 136, 136, 0.63);
 }
 
 @media (max-width: 1750px) {
