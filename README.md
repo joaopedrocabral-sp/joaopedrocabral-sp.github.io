@@ -14,8 +14,10 @@ Este é o repositório do meu portfólio. Onde encontra um pouco sobre mim e alg
 ## Projetos 
 #### Controle de Receitas/Despesas
 [Link para o site](https://joaopedrocabral-sp.github.io/controle-de-despesas.html)
+
 [Link para a pasta do repositório](https://github.com/joaopedrocabral-sp/joaopedrocabral-sp.github.io/tree/main/controle-despesa)
 
 #### Buscador de CEP
 [Link para o site](https://joaopedrocabral-sp.github.io/consultaCEP.html)
+
 [Link para a pasta do repositório](https://github.com/joaopedrocabral-sp/joaopedrocabral-sp.github.io/tree/main/consultaCEP)
