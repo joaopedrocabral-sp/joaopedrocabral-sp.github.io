@@ -3,7 +3,7 @@
 
 Este é o repositório do meu portfólio. Onde encontra um pouco sobre mim e alguns trabalhos feitos por mim.
 
-Tecnologias usadas: 
+## Tecnologias usadas: 
 <div style= "display: inline_block">
   <img allign="center" alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img allign="center" alt="CSS" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
