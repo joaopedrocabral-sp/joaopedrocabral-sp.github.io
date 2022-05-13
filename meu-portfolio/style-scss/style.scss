@@ -475,6 +475,7 @@ main{
 }
 @media (max-width: 490px){
     header{
+        position: relative;
         nav{
             button{
                 width: 70px;
@@ -488,6 +489,7 @@ main{
                 min-width: 300px;
                 height: 80vh;
                 min-height: 620px;
+                margin-top: 20px;
 
                 .apresentation{
                     img{
