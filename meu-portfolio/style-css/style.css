@@ -414,6 +414,9 @@ main .center .dark-curriculum {
   header {
     position: relative;
   }
+  header nav {
+    position: relative;
+  }
   header nav button {
     width: 70px;
     line-height: 18px;
