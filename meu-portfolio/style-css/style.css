@@ -411,15 +411,22 @@ main .center .dark-curriculum {
   }
 }
 @media (max-width: 490px) {
+  header {
+    position: relative;
+  }
   header nav button {
     width: 70px;
     line-height: 18px;
   }
 
+  main .center {
+    margin-top: 0;
+  }
   main .center .curriculum {
     min-width: 300px;
     height: 80vh;
     min-height: 620px;
+    margin-top: 20px;
   }
   main .center .curriculum .apresentation img {
     width: 125px;
